@@ -23,6 +23,7 @@
       "dc11": "http://purl.org/dc/elements/1.1/",
       "dcterms": "http://purl.org/dc/terms/",
       "foaf": "http://xmlns.com/foaf/0.1/",
+      "geo": "http://www.opengis.net/ont/geosparql#",
       "hiscam": "https://iisg.amsterdam/hiscam/",
       "hisclass": "https://iisg.amsterdam/hisclass/",
       "hisclass5": "https://iisg.amsterdam/hisclass5/",
@@ -79,11 +80,23 @@
     "quoteChar": "\""
   },
   "tableSchema": {
-    "aboutUrl": "{_row}",
+    "aboutUrl": "lomankaart/{name_in_uri}",
     "columns": [
       {
+        "virtual": true,
+        "propertyUrl": "geo:hasGeometry",
+        "valueUrl": "lomankaart/.well-known/genid/{id}/wijk/{name_in_uri}"
+      },
+      {
+          "virtual": true,
+          "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+          "aboutUrl": "lomankaart/.well-known/genid/{id}/wijk/{name_in_uri}",
+          "propertyUrl": "geo:asWKT",
+          "csvw:value": "{WKT}"
+      },
+      {
         "@id": "https://iisg.amsterdam/lomankaart.csv/column/WKT",
-        "datatype": "string",
+        "datatype": "geo:wktLiteral",
         "dc:description": "WKT",
         "name": "WKT",
         "titles": [
@@ -92,7 +105,7 @@
       },
       {
         "@id": "https://iisg.amsterdam/lomankaart.csv/column/id",
-        "datatype": "string",
+        "datatype": "xsd:integer",
         "dc:description": "id",
         "name": "id",
         "titles": [
