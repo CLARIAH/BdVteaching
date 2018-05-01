@@ -96,17 +96,33 @@
         "name": "WKT",
         "titles": [
           "WKT"
-        ],
+        ]
+       },
+       {
+        "virtual":true,
+        "datatype": "geo:wktLiteral",
         "aboutUrl": "lomankaart/.well-known/genid/district/{name_in_uri}/{id}",
         "propertyUrl": "geo:asWKT",
-        "csvw:value": "{WKT}"    
+        "csvw:value": "{WKT}"
       },
       {
        "virtual": true,
        "aboutUrl": "adam-geo:district/{name_in_uri}/{id}",
-       "propertyUrl": "skos:prefLabel",
-       "csvw:value": "{name_in_uri}"   
-      }
+       "propertyUrl": "skos:altLabel",
+       "csvw:value": "{name_in_uri}"
+     },
+     {
+      "virtual": true,
+      "aboutUrl": "adam-geo:district/{name_in_uri}/{id}",
+      "propertyUrl": "skos:altLabel",
+      "csvw:value": "{name_in_uri}"
+    },
+    {
+     "virtual": true,
+     "aboutUrl": "adam-geo:district/{name_in_uri}/{id}",
+     "propertyUrl": "skos:prefLabel",
+     "csvw:value": "{prefLabel}"
+   }
     ],
     "primaryKey": "WKT"
   },

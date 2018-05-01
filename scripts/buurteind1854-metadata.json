@@ -6,6 +6,7 @@
       "@language": "nl"
     },
     {
+      "adam-geo": "https://adamlink.nl/geo/", 
       "bibo": "http://purl.org/ontology/bibo/",
       "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
       "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
@@ -68,7 +69,7 @@
   "dc:publisher": {
     "schema:name": "CLARIAH Structured Data Hub - Datalegend",
     "schema:url": {
-      "@id": "http://datalegend.org"
+      "@id": "http://datalegend.net"
     }
   },
   "dc:title": "Buurt-csv8.csv",
@@ -79,8 +80,13 @@
     "quoteChar": "\""
   },
   "tableSchema": {
-    "aboutUrl": "{_row}/wijk/{Buurtnaam}",
+    "aboutUrl": "/loman/district/{Buurtnaam}",
     "columns": [
+      {
+       "virtual": true,
+       "propertyUrl": "skos:altLabel",
+       "csvw:value": "buurt-{{Buurtnaam|lower}}"  
+      },
       {
         "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/Buurtnaam",
         "datatype": "string",
@@ -88,10 +94,8 @@
         "name": "Buurtnaam",
         "titles": [
           "Naam Buurt Amsterdam"
-        ],
-        "propertyUrl": "rdf:type",
-        "valueUrl": "vocab/neighbourhood"
-     },  
+        ]
+     },
       {
         "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/patbly",
         "datatype": "xsd:float",
