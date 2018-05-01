@@ -88,8 +88,10 @@
         "name": "Buurtnaam",
         "titles": [
           "Naam Buurt Amsterdam"
-        ]
-      },
+        ],
+        "propertyUrl": "rdf:type",
+        "valueUrl": "vocab/neighbourhood"
+     },  
       {
         "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/patbly",
         "datatype": "xsd:float",
