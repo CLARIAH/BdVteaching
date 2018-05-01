@@ -6,6 +6,7 @@
       "@language": "en"
     },
     {
+      "adam-geo": "https://adamlink.nl/geo/",
       "bibo": "http://purl.org/ontology/bibo/",
       "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
       "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
@@ -69,7 +70,7 @@
   "dc:publisher": {
     "schema:name": "CLARIAH Structured Data Hub - Datalegend",
     "schema:url": {
-      "@id": "http://datalegend.org"
+      "@id": "http://datalegend.net"
     }
   },
   "dc:title": "lomankaart.csv",
@@ -84,51 +85,27 @@
     "columns": [
       {
         "virtual": true,
+        "aboutUrl": "adam-geo:district/{name_in_uri}/{id}",
         "propertyUrl": "geo:hasGeometry",
-        "valueUrl": "lomankaart/.well-known/genid/{id}/wijk/{name_in_uri}"
+        "valueUrl": "lomankaart/.well-known/genid/district/{name_in_uri}/{id}"
       },
-      {
-          "virtual": true,
-          "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
-          "aboutUrl": "lomankaart/.well-known/genid/{id}/wijk/{name_in_uri}",
-          "propertyUrl": "geo:asWKT",
-          "csvw:value": "{WKT}"
-      },
-      {
+        {
         "@id": "https://iisg.amsterdam/lomankaart.csv/column/WKT",
         "datatype": "geo:wktLiteral",
         "dc:description": "WKT",
         "name": "WKT",
         "titles": [
           "WKT"
-        ]
+        ],
+        "aboutUrl": "lomankaart/.well-known/genid/district/{name_in_uri}/{id}",
+        "propertyUrl": "geo:asWKT",
+        "csvw:value": "{WKT}"    
       },
       {
-        "@id": "https://iisg.amsterdam/lomankaart.csv/column/id",
-        "datatype": "xsd:integer",
-        "dc:description": "id",
-        "name": "id",
-        "titles": [
-          "id"
-        ]
-      },
-      {
-        "@id": "https://iisg.amsterdam/lomankaart.csv/column/name_in_uri",
-        "datatype": "string",
-        "dc:description": "name_in_uri",
-        "name": "name_in_uri",
-        "titles": [
-          "name_in_uri"
-        ]
-      },
-      {
-        "@id": "https://iisg.amsterdam/lomankaart.csv/column/preflabel",
-        "datatype": "string",
-        "dc:description": "preflabel",
-        "name": "preflabel",
-        "titles": [
-          "preflabel"
-        ]
+       "virtual": true,
+       "aboutUrl": "adam-geo:district/{name_in_uri}/{id}",
+       "propertyUrl": "skos:prefLabel",
+       "csvw:value": "{name_in_uri}"   
       }
     ],
     "primaryKey": "WKT"
