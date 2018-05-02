@@ -33,6 +33,7 @@
       "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
       "hisco-status": "https://iisg.amsterdam/hisco/status/",
       "hsn": "https://iisg.amsterdam/hsn2013a/",
+      "juso": "http://rdfs.co/juso/",
       "ldp": "http://www.w3.org/ns/ldp#",
       "napp": "https://iisg.amsterdam/napp/",
       "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
@@ -89,6 +90,12 @@
         "propertyUrl": "geo:hasGeometry",
         "valueUrl": "lomankaart/.well-known/genid/district/{name_in_uri}/{id}"
       },
+      {
+       "virtual": true,
+       "aboutUrl": "adam-geo:district/{name_in_uri}/{id}",
+       "propertyUrl": "rdf:type",
+       "valueUrl": "juso:Neighborhood"   
+      },  
         {
         "@id": "https://iisg.amsterdam/lomankaart.csv/column/WKT",
         "datatype": "geo:wktLiteral",
@@ -121,7 +128,7 @@
      "virtual": true,
      "aboutUrl": "adam-geo:district/{name_in_uri}/{id}",
      "propertyUrl": "skos:prefLabel",
-     "csvw:value": "{prefLabel}"
+     "csvw:value": "{preflabel}"
    }
     ],
     "primaryKey": "WKT"
