@@ -1,0 +1,178 @@
+{
+  "@context": [
+    "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
+    {
+      "@base": "https://iisg.amsterdam/", 
+      "@language": "en"
+    }, 
+    {
+      "bibo": "http://purl.org/ontology/bibo/", 
+      "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/", 
+      "canfam-auke": "https://iisg.amsterdam/canfam/auke/", 
+      "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
+      "clio": "https://iisg.amsterdam/clio/", 
+      "clioctr": "https://iisg.amsterdam/clio/country/", 
+      "clioind": "https://iisg.amsterdam/clio/indicator/", 
+      "clioprop": "https://iisg.amsterdam/clio/property/", 
+      "csvw": "http://www.w3.org/ns/csvw#", 
+      "dbo": "http://dbpedia.org/ontology/", 
+      "dbp": "http://dbpedia.org/property/", 
+      "dbpedia": "http://dbpedia.org/resource/", 
+      "dbr": "http://dbpedia.org/resource/", 
+      "dc": "http://purl.org/dc/terms/", 
+      "dc11": "http://purl.org/dc/elements/1.1/", 
+      "dcterms": "http://purl.org/dc/terms/", 
+      "foaf": "http://xmlns.com/foaf/0.1/", 
+      "hiscam": "https://iisg.amsterdam/hiscam/", 
+      "hisclass": "https://iisg.amsterdam/hisclass/", 
+      "hisclass5": "https://iisg.amsterdam/hisclass5/", 
+      "hisco": "https://iisg.amsterdam/hisco/", 
+      "hisco-product": "https://iisg.amsterdam/hisco/product/", 
+      "hisco-relation": "https://iisg.amsterdam/hisco/relation/", 
+      "hisco-status": "https://iisg.amsterdam/hisco/status/", 
+      "hsn": "https://iisg.amsterdam/hsn2013a/", 
+      "ldp": "http://www.w3.org/ns/ldp#", 
+      "napp": "https://iisg.amsterdam/napp/", 
+      "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/", 
+      "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/", 
+      "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/", 
+      "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/", 
+      "np": "http://www.nanopub.org/nschema#", 
+      "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/", 
+      "owl": "http://www.w3.org/2002/07/owl#", 
+      "prov": "http://www.w3.org/ns/prov#", 
+      "qb": "http://purl.org/linked-data/cube#", 
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+      "schema": "http://schema.org/", 
+      "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
+      "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
+      "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
+      "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
+      "sdr": "https://iisg.amsterdam", 
+      "sdv": "https://iisg.amsterdam/vocab/", 
+      "skos": "http://www.w3.org/2004/02/skos/core#", 
+      "time": "http://www.w3.org/2006/time#", 
+      "xml": "http://www.w3.org/XML/1998/namespace/", 
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+  ], 
+  "@id": "https://iisg.amsterdam/Buurt-csv8.csv", 
+  "dc:license": {
+    "@id": "http://opendefinition.org/licenses/cc-by/"
+  }, 
+  "dc:modified": {
+    "@type": "xsd:date", 
+    "@value": "2018-05-15"
+  }, 
+  "dc:publisher": {
+    "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
+    "schema:url": {
+      "@id": "http://datalegend.org"
+    }
+  }, 
+  "dc:title": "Buurt-csv8.csv", 
+  "dcat:keyword": [], 
+  "dialect": {
+    "delimiter": ";", 
+    "encoding": "ascii", 
+    "quoteChar": "\""
+  }, 
+  "tableSchema": {
+    "aboutUrl": "{_row}", 
+    "columns": [
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/Buurtnaam", 
+        "datatype": "string", 
+        "dc:description": "Buurtnaam", 
+        "name": "Buurtnaam", 
+        "titles": [
+          "Buurtnaam"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/AdamlinkNummer", 
+        "datatype": "string", 
+        "dc:description": "AdamlinkNummer", 
+        "name": "AdamlinkNummer", 
+        "titles": [
+          "AdamlinkNummer"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/patbly", 
+        "datatype": "string", 
+        "dc:description": "patbly", 
+        "name": "patbly", 
+        "titles": [
+          "patbly"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/pbly", 
+        "datatype": "string", 
+        "dc:description": "pbly", 
+        "name": "pbly", 
+        "titles": [
+          "pbly"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/grondbly", 
+        "datatype": "string", 
+        "dc:description": "grondbly", 
+        "name": "grondbly", 
+        "titles": [
+          "grondbly"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/totaalbly", 
+        "datatype": "string", 
+        "dc:description": "totaalbly", 
+        "name": "totaalbly", 
+        "titles": [
+          "totaalbly"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/nrbodey", 
+        "datatype": "string", 
+        "dc:description": "nrbodey", 
+        "name": "nrbodey", 
+        "titles": [
+          "nrbodey"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/nrhgy", 
+        "datatype": "string", 
+        "dc:description": "nrhgy", 
+        "name": "nrhgy", 
+        "titles": [
+          "nrhgy"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/aantal_personen", 
+        "datatype": "string", 
+        "dc:description": "aantal personen", 
+        "name": "aantal personen", 
+        "titles": [
+          "aantal personen"
+        ]
+      }, 
+      {
+        "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/percentage_totaal", 
+        "datatype": "string", 
+        "dc:description": "percentage totaal", 
+        "name": "percentage totaal", 
+        "titles": [
+          "percentage totaal"
+        ]
+      }
+    ], 
+    "primaryKey": "Buurtnaam"
+  }, 
+  "url": "Buurt-csv8.csv"
+}
