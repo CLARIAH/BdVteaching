@@ -1,2 +1,6 @@
 bla
+<<<<<<< HEAD
  hoi
+=======
+doei
+>>>>>>> 4b72ab9548c738361854b30e937bf8ed4e90aaba
