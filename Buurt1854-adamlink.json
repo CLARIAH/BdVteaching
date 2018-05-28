@@ -101,56 +101,56 @@
       {
       "virtual": true,
       "datatype": "xsd:float",
-      "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
+      "aboutUrl":"https://adamlink.nl/geo/district/buurt-{{Buurtnaam|lower}}/{AdamlinkNummer}",
       "propertyUrl": "vocab/grondbelasting",
       "valueUrl": "{grondbly}"
       },
       {
       "virtual": true,
       "datatype": "xsd:float",
-      "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
+      "aboutUrl":"https://adamlink.nl/geo/district/buurt-{{Buurtnaam|lower}}/{AdamlinkNummer}",
       "propertyUrl": "vocab/patentbelasting",
       "valueUrl": "{patbly}"
       },
       {
       "virtual": true,
       "datatype": "xsd:float",
-      "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
+      "aboutUrl":"https://adamlink.nl/geo/district/buurt-{{Buurtnaam|lower}}/{AdamlinkNummer}",
       "propertyUrl": "vocab/personele belasting",
       "valueUrl": "{pbly}"
       },
       {
       "virtual": true,
       "datatype": "xsd:float",
-      "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
+      "aboutUrl":"https://adamlink.nl/geo/district/buurt-{{Buurtnaam|lower}}/{AdamlinkNummer}",
       "propertyUrl": "vocab/totale belasting",
       "valueUrl": "{totaalbly}"
       },
       {
       "virtual": true,
       "datatype": "xsd:float",
-      "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
+      "aboutUrl":"https://adamlink.nl/geo/district/buurt-{{Buurtnaam|lower}}/{AdamlinkNummer}",
       "propertyUrl": "vocab/dienstboden",
       "valueUrl": "{nrbodey}"
       },
       {
       "virtual": true,
       "datatype": "xsd:float",
-      "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
+      "aboutUrl":"https://adamlink.nl/geo/district/buurt-{{Buurtnaam|lower}}/{AdamlinkNummer}",
       "propertyUrl": "vocab/huisgenoten",
       "valueUrl": "{nrhgy}"
       },
       {
       "virtual": true,
       "datatype": "xsd:int",
-      "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
+      "aboutUrl":"https://adamlink.nl/geo/district/buurt-{{Buurtnaam|lower}}/{AdamlinkNummer}",
       "propertyUrl": "vocab/personen",
       "valueUrl": "{aantal personen}"
       },
       {
       "virtual": true,
       "datatype": "xsd:float",
-      "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
+      "aboutUrl":"https://adamlink.nl/geo/district/buurt-{{Buurtnaam|lower}}/{AdamlinkNummer}",
       "propertyUrl": "vocab/percentage totaal",
       "valueUrl": "{percentage totaal}"
       },
