@@ -100,59 +100,59 @@
       },
       {
       "virtual": true,
-      "datatype": "string",
+      "datatype": "xsd:float",
       "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
       "propertyUrl": "vocab/grondbelasting",
-      "valueUrl": "{grondbly}"
+      "csvw:value": "{grondbly}"
       },
       {
       "virtual": true,
-      "datatype": "string",
+      "datatype": "xsd:float",
       "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
       "propertyUrl": "vocab/patentbelasting",
-      "valueUrl": "{patbly}"
+      "csvw:value": "{patbly}"
       },
       {
       "virtual": true,
-      "datatype": "string",
+      "datatype": "xsd:float",
       "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
       "propertyUrl": "vocab/personele belasting",
-      "valueUrl": "{pbly}"
+      "csvw:value": "{pbly}"
       },
       {
       "virtual": true,
-      "datatype": "string",
+      "datatype": "xsd:float",
       "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
       "propertyUrl": "vocab/totale belasting",
-      "valueUrl": "{totaalbly}"
+      "csvw:value": "{totaalbly}"
       },
       {
       "virtual": true,
-      "datatype": "string",
+      "datatype": "xsd:float",
       "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
       "propertyUrl": "vocab/dienstboden",
-      "valueUrl": "{nrbodey}"
+      "csvw:value": "{nrbodey}"
       },
       {
       "virtual": true,
-      "datatype": "string",
+      "datatype": "xsd:float",
       "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
       "propertyUrl": "vocab/huisgenoten",
-      "valueUrl": "{nrhgy}"
+      "csvw:value": "{nrhgy}"
       },
       {
       "virtual": true,
-      "datatype": "string",
+      "datatype": "xsd:int",
       "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
       "propertyUrl": "vocab/personen",
-      "valueUrl": "{aantal personen}"
+      "csvw:value": "{aantal personen}"
       },
       {
       "virtual": true,
-      "datatype": "string",
+      "datatype": "xsd:float",
       "aboutUrl":"https://adamlink.nl/geo/districts/list/buurten1850/{Buurtnaam}/{AdamlinkNummer}",
       "propertyUrl": "vocab/percentage totaal",
-      "valueUrl": "{percentage totaal}"
+      "csvw:value": "{percentage totaal}"
       },
       {
         "@id": "https://iisg.amsterdam/Buurt-csv8.csv/column/AdamlinkNummer",
